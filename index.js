@@ -1,10 +1,11 @@
 function slider({
-    content, offset, nextArrow, prevArrow, currentSlide, 
+    content, nextArrow, prevArrow, currentSlide, 
     wrapper, fill, totalCounter, currentCounter, dotsIndicators, 
     dotIndicator, activeClass
 }) 
 {
-    let currentSliderNo = currentSlide;
+    let currentSliderNo = currentSlide,
+        offset = 0;
     const sliderContent = document.querySelectorAll(content),
           totalSliderNu = sliderContent.length,
           prevSlide = document.querySelector(prevArrow),
